@@ -1,3 +1,17 @@
+/*navigation menu*/
+
+.bg-custom{
+  background-color: #0a7991;
+}
+.nav-link, .navbar-brand{
+  color: white;
+}
+.navbar-text a{
+  color: white;
+}
+
+/*jumbotron or hero section*/
+
 .jumbotron {
   background-color:#0a7991;
   padding: 2rem 4rem;
@@ -11,14 +25,37 @@
   width: 500px;
 }
 
-.bg-custom{
-  background-color: #0a7991;
-}
-.nav-link, .navbar-brand{
-  color: white;
-}
-.navbar-text a{
-  color: white;
+
+/*About us section*/
+
+#about #brandname, #product #brandname{
+  color: #0a7991;
 }
 
-        
+#about p{
+  text-align: justify;
+  user-select: none;
+}
+
+
+/*product section*/
+#product #product_icons{        /*icons of heart view cart aka khali ak*/
+  width: 40px;
+  
+  }
+
+#product #product_icons img {
+  background-color: #0a7991;
+  margin: 5px 0px;
+  padding: 5px;
+}
+#product_icons{
+  position: absolute;           /*icon varti aale*/
+  top:25px;
+  opacity:0;
+  transition:opacity 0.3s;      /*hover kelyvr cursor convert into hand cursor*/
+  cursor: pointer;
+}
+#product .card:hover #product_icons{
+  opacity:1;
+}
